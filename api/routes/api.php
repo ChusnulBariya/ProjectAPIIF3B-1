@@ -11,3 +11,5 @@ Route::get('/user', function (Request $request) {
 
 route::get('/fakultas', [FakultasController::class, 'index']);
 route::get('/prodi', [ProdiController::class, 'index']);
+Route::post('/fakultas',[FakultasController::class, 'store']);
+Route::post('/prodi',[ProdiController::class,'store']);
